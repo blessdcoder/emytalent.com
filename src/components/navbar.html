@@ -1,0 +1,91 @@
+<!--
+    navbar.html — Main site navigation
+    
+    Design: glass-morphism bar, logo left | links center | actions right
+    Features:
+      - Backdrop blur for depth
+      - Animated active-link underline indicator
+      - Theme toggle (dark ↔ light) — state managed by main.js
+      - "Get A Quote" CTA pill button
+      - Collapses to a clean off-canvas-style dropdown on mobile
+-->
+<nav class="navbar navbar-expand-lg site-nav fixed-top" aria-label="Main navigation">
+    <div class="container site-nav__container">
+
+        <!-- ── Logo ─────────────────────────────────────────── -->
+        <a class="site-nav__brand" href="#intro" aria-label="EMY TALENT — go to top">
+            <!--
+                Two logo variants — JS toggles visibility via data-theme.
+                White logo for dark mode; black logo for light mode.
+            -->
+            <img class="nav-logo nav-logo--dark"
+                 src="./src/assets/images/logos/EMY TALENTS LOGO WHITE.png"
+                 alt="EMY TALENT" height="36">
+            <img class="nav-logo nav-logo--light"
+                 src="./src/assets/images/logos/EMY TALENTS LOGO BLACK.png"
+                 alt="EMY TALENT" height="36">
+        </a>
+
+        <!-- ── Mobile toggler ───────────────────────────────── -->
+        <button class="navbar-toggler site-nav__toggler ms-auto me-3"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#primaryNav"
+                aria-controls="primaryNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+            <span class="toggler-bar"></span>
+            <span class="toggler-bar"></span>
+            <span class="toggler-bar"></span>
+        </button>
+
+        <!-- ── Collapsible section ──────────────────────────── -->
+        <div class="collapse navbar-collapse" id="primaryNav">
+
+            <!-- Nav links — centred via mx-auto -->
+            <ul class="navbar-nav mx-auto site-nav__links">
+                <li class="nav-item">
+                    <a class="nav-link site-nav__link active"
+                       aria-current="page"
+                       href="#intro">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link site-nav__link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link site-nav__link" href="#services">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link site-nav__link" href="#contact">Contact</a>
+                </li>
+            </ul>
+
+            <!-- Right actions: theme toggle + CTA -->
+            <div class="site-nav__actions d-flex align-items-center gap-3">
+
+                <!--
+                    Theme toggle button
+                    Icon and aria-label swapped by main.js on click.
+                -->
+                <button class="theme-toggle"
+                        id="themeToggle"
+                        type="button"
+                        aria-label="Switch to light mode"
+                        title="Toggle colour theme">
+                    <!-- Sun icon shown in dark mode (click to go light) -->
+                    <i class="bi bi-sun theme-toggle__icon--light" aria-hidden="true"></i>
+                    <!-- Moon icon shown in light mode (click to go dark) -->
+                    <i class="bi bi-moon-stars theme-toggle__icon--dark" aria-hidden="true"></i>
+                </button>
+
+                <!-- CTA pill -->
+                <a href="#contact" class="btn-nav-cta">
+                    Get A Quote
+                    <i class="bi bi-arrow-right ms-1" aria-hidden="true"></i>
+                </a>
+
+            </div>
+        </div><!-- /collapse -->
+
+    </div>
+</nav>

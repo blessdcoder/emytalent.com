@@ -1,0 +1,86 @@
+/* =============================================================
+   variables.css — Design tokens (single source of truth)
+   
+   Dark mode is the default. Light mode is applied by adding
+   data-theme="light" to the <html> element via JS.
+   All colours, spacing and shadow values live here — nowhere else.
+============================================================= */
+
+/* ── Dark mode (default) ────────────────────────────────────── */
+:root {
+    /* Surfaces */
+    --clr-bg:           #0f0f0f;
+    --clr-bg-dark:      #080808;
+    --clr-bg-mid:       #1a1a1a;
+    --clr-bg-card:      #161616;
+    --clr-bg-input:     rgba(255, 255, 255, 0.05);
+    --clr-border:       rgba(255, 255, 255, 0.08);
+    --clr-border-input: rgba(255, 255, 255, 0.12);
+
+    /* Text */
+    --clr-text:         #ffffff;
+    --clr-text-80:      rgba(255, 255, 255, 0.80);
+    --clr-text-60:      rgba(255, 255, 255, 0.60);
+    --clr-text-muted:   rgba(255, 255, 255, 0.62);
+
+    /* Brand accent (crimson — consistent across both modes) */
+    --clr-accent:       #c41230;
+    --clr-accent-hov:   #e01535;
+    --clr-accent-dim:   rgba(196, 18, 48, 0.12);
+
+    /* Navbar */
+    --clr-nav-bg:       rgba(8, 8, 8, 0.92);
+    --clr-nav-link:     rgba(255, 255, 255, 0.75);
+    --clr-nav-link-hov: #ffffff;
+
+    /* Logo to use (filename without path) */
+    --logo-src:         url('../assets/images/logos/EMY TALENTS LOGO WHITE.png');
+
+    /* Typography */
+    --ff-heading:       'Montserrat', sans-serif;
+    --ff-body:          'Heebo', sans-serif;
+
+    /* Layout */
+    --navbar-h:         68px;
+    --sec-pad:          6rem 0;
+    --radius-lg:        1.25rem;
+    --radius-md:        0.75rem;
+    --radius-sm:        0.4rem;
+    --radius-btn:       3rem;
+
+    /* Shadows */
+    --shadow-card:      0 20px 60px rgba(0, 0, 0, 0.55);
+    --shadow-btn:       0 8px 24px rgba(196, 18, 48, 0.45);
+    --shadow-nav:       0 4px 24px rgba(0, 0, 0, 0.40);
+
+    /* Transitions */
+    --transition-fast:  0.18s ease;
+    --transition-base:  0.28s ease;
+}
+
+/* ── Light mode overrides ───────────────────────────────────── */
+[data-theme="light"] {
+    /* Surfaces */
+    --clr-bg:           #f5f5f5;
+    --clr-bg-dark:      #e8e8e8;
+    --clr-bg-mid:       #ffffff;
+    --clr-bg-card:      #ffffff;
+    --clr-bg-input:     rgba(0, 0, 0, 0.04);
+    --clr-border:       rgba(0, 0, 0, 0.10);
+    --clr-border-input: rgba(0, 0, 0, 0.15);
+
+    /* Text */
+    --clr-text:         #0f0f0f;
+    --clr-text-80:      rgba(15, 15, 15, 0.80);
+    --clr-text-60:      rgba(15, 15, 15, 0.60);
+    --clr-text-muted:   rgba(15, 15, 15, 0.58);
+
+    /* Navbar */
+    --clr-nav-bg:       rgba(255, 255, 255, 0.94);
+    --clr-nav-link:     rgba(15, 15, 15, 0.70);
+    --clr-nav-link-hov: #0f0f0f;
+
+    /* Shadows */
+    --shadow-card:      0 8px 32px rgba(0, 0, 0, 0.10);
+    --shadow-nav:       0 2px 16px rgba(0, 0, 0, 0.10);
+}
