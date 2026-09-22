@@ -39,6 +39,11 @@
     /* Typography */
     --ff-heading:       'Montserrat', sans-serif;
     --ff-body:          'Heebo', sans-serif;
+    --fw-regular:       400;
+    --fw-medium:        500;
+    --fw-semibold:      600;
+    --fw-bold:          700;
+    --fw-black:         800;
 
     /* Layout */
     --navbar-h:         68px;
@@ -48,14 +53,23 @@
     --radius-sm:        0.4rem;
     --radius-btn:       3rem;
 
-    /* Shadows */
-    --shadow-card:      0 20px 60px rgba(0, 0, 0, 0.55);
-    --shadow-btn:       0 8px 24px rgba(196, 18, 48, 0.45);
-    --shadow-nav:       0 4px 24px rgba(0, 0, 0, 0.40);
+    /* Shadows — refined scale for premium feel */
+    --shadow-subtle:  0 2px 8px rgba(0, 0, 0, 0.12);
+    --shadow-card:    0 12px 32px rgba(0, 0, 0, 0.35);
+    --shadow-card-hover: 0 16px 48px rgba(0, 0, 0, 0.45);
+    --shadow-btn:     0 8px 24px rgba(0, 0, 0, 0.25);
+    --shadow-nav:     0 4px 24px rgba(0, 0, 0, 0.40);
+    --shadow-focus:   0 0 0 4px rgba(196, 18, 48, 0.15);
 
-    /* Transitions */
-    --transition-fast:  0.18s ease;
+    /* Additional accent colors for states */
+    --clr-accent-light: #d63b4a;
+    --clr-accent-subtle: rgba(196, 18, 48, 0.08);
+    --clr-accent-bg:  rgba(196, 18, 48, 0.12);
+
+    /* Transitions — refined for consistency */
+    --transition-fast:  0.22s ease;
     --transition-base:  0.28s ease;
+    --transition-smooth: 0.35s ease;
 }
 
 /* ── Light mode overrides ───────────────────────────────────── */

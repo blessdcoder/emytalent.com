@@ -1,0 +1,206 @@
+<!-- ════════════════════════════════════════════════════════════
+     TRAINING & ACADEMY SECTION
+     Hero section: large image left | content right
+     Showcases EMYTALENT Academy transformation programs
+════════════════════════════════════════════════════════════ -->
+<section id="training" class="training-section" aria-label="Training and Development Academy">
+    <div class="container">
+
+        <!-- ── Section header ────────────────────────────────── -->
+        <div class="row justify-content-center mb-5">
+            <div class="col-lg-8 text-center reveal">
+                <span class="section-eyebrow">Professional Development</span>
+                <h2 class="section-title mt-2">
+                    Training is<br>
+                    <span class="text-accent">Transformation</span>
+                </h2>
+                <p class="section-subtitle mx-auto">
+                    Our academy delivers practical, high-impact learning that develops employees, sharpens leadership, 
+                    and improves organizational performance.
+                </p>
+            </div>
+        </div>
+
+        <!-- ── Two-column: image | content ────────────────────– -->
+        <div class="row align-items-center g-5">
+
+            <!-- Image: Training Workshop -->
+            <div class="col-lg-6 reveal">
+                <div class="training-image-frame">
+                    <!--
+                        TRAINING IMAGE — Professional facilitator leading engaged group.
+                        Shows transformation in action with diverse participants.
+                    -->
+                    <img src="./src/assets/images/sections/training-workshop.jpg"
+                         srcset="
+                             ./src/assets/images/sections/training-workshop-mobile.jpg  480w,
+                             ./src/assets/images/sections/training-workshop-tablet.jpg  960w,
+                             ./src/assets/images/sections/training-workshop.jpg  1400w
+                         "
+                         sizes="(max-width: 767px) 100vw, 50vw"
+                         alt="Professional facilitator leading engaged diverse group in interactive business training"
+                         width="960"
+                         height="640"
+                         loading="lazy"
+                         decoding="async">
+                </div>
+            </div>
+
+            <!-- Content -->
+            <div class="col-lg-6 reveal reveal-delay-1">
+
+                <h3 class="h4 mb-3">EMYTALENT Academy</h3>
+
+                <p class="training-lead mb-4">
+                    We partner with experienced facilitators and learning designers to deliver practical, 
+                    high-impact training tailored to your business reality.
+                </p>
+
+                <!-- Training Methods -->
+                <div class="mb-5">
+                    <h4 class="mb-3 training-subheading">Our Learning Methods</h4>
+                    <ul class="training-methods">
+                        <li><strong>Interactive Workshops</strong> — Engaging, hands-on learning experiences</li>
+                        <li><strong>Executive Retreats</strong> — Strategic thinking for leadership teams</li>
+                        <li><strong>Virtual Masterclasses</strong> — Flexible learning for distributed teams</li>
+                        <li><strong>On-Site Corporate Training</strong> — Customized programs for your organization</li>
+                    </ul>
+                </div>
+
+                <!-- Training Divisions -->
+                <div class="mb-5">
+                    <h4 class="mb-3 training-subheading">Training Divisions</h4>
+                    
+                    <div class="training-programs">
+                        <div class="training-program-item">
+                            <h5 class="training-program-title">Leadership Development</h5>
+                            <p class="text-muted small">Executive bootcamps, strategic thinking, leading high-performance teams</p>
+                        </div>
+                        <div class="training-program-item">
+                            <h5 class="training-program-title">Managerial Development</h5>
+                            <p class="text-muted small">Communication, time management, customer service, conflict resolution</p>
+                        </div>
+                        <div class="training-program-item">
+                            <h5 class="training-program-title">HR & Organization Development</h5>
+                            <p class="text-muted small">Talent management, succession planning, organizational culture transformation</p>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#contact" class="btn-brand d-inline-flex align-items-center">
+                    Explore Academy Programs <i class="bi bi-arrow-right ms-2" aria-hidden="true"></i>
+                </a>
+
+            </div>
+
+        </div><!-- /row -->
+
+    </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════════════════
+     INLINE STYLES FOR TRAINING SECTION
+     (Consider moving to main.css for production)
+════════════════════════════════════════════════════════════ -->
+<style>
+.training-section {
+    padding: var(--sec-pad);
+    background: var(--clr-bg);
+}
+
+.training-image-frame {
+    width: 100%;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: var(--shadow-card);
+    transition: box-shadow var(--transition-base);
+}
+
+.training-image-frame img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.training-image-frame:hover {
+    box-shadow: var(--shadow-card-hover);
+}
+
+.training-lead {
+    font-size: 1.1rem;
+    color: var(--clr-text-90);
+    line-height: 1.7;
+}
+
+.training-subheading {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--clr-text);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 1rem;
+}
+
+.training-methods {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.training-methods li {
+    font-size: 0.95rem;
+    color: var(--clr-text-90);
+    line-height: 1.7;
+    padding: 0.75rem 0;
+    padding-left: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.training-methods li:last-child {
+    border-bottom: none;
+}
+
+.training-methods strong {
+    color: var(--clr-text);
+}
+
+.training-programs {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.training-program-item {
+    padding: 1.25rem;
+    background: rgba(196, 18, 48, 0.05);
+    border-left: 3px solid var(--clr-accent);
+    border-radius: 0.5rem;
+    transition: background var(--transition-base);
+}
+
+.training-program-item:hover {
+    background: rgba(196, 18, 48, 0.1);
+}
+
+.training-program-title {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--clr-text);
+    margin-bottom: 0.5rem;
+}
+
+.training-program-item .text-muted {
+    margin-bottom: 0;
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+    .training-section {
+        padding: 3rem 0;
+    }
+    
+    .training-image-frame {
+        margin-bottom: 2rem;
+    }
+}
+</style>

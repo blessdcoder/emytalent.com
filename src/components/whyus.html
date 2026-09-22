@@ -1,0 +1,221 @@
+<!-- ════════════════════════════════════════════════════════════
+     WHY CHOOSE EMYTALENT SECTION
+     Differentiators: content left | image right
+     Showcases competitive advantages and strategic excellence
+════════════════════════════════════════════════════════════ -->
+<section id="why-us" class="whyus-section" aria-label="Why Choose EMYTALENT">
+    <div class="container">
+
+        <!-- ── Section header ────────────────────────────────– -->
+        <div class="row justify-content-center mb-5">
+            <div class="col-lg-8 text-center reveal">
+                <span class="section-eyebrow">Why Choose Us</span>
+                <h2 class="section-title mt-2">
+                    Strategic Excellence<br>
+                    <span class="text-accent">Measurable Results</span>
+                </h2>
+                <p class="section-subtitle mx-auto">
+                    We combine industry insight, structured processes, and deep business understanding to deliver 
+                    HR solutions that work in real business environments.
+                </p>
+            </div>
+        </div>
+
+        <!-- ── Two-column: content | image ────────────────────– -->
+        <div class="row align-items-center g-5">
+
+            <!-- Content -->
+            <div class="col-lg-6 reveal">
+
+                <!-- Differentiators -->
+                <div class="whyus-differentiators">
+
+                    <div class="whyus-item">
+                        <div class="whyus-icon">
+                            <i class="bi bi-people-fill" aria-hidden="true"></i>
+                        </div>
+                        <div>
+                            <h4 class="whyus-item-title">People-Centric Approach</h4>
+                            <p class="whyus-item-desc">We place people at the center of every strategy, ensuring organizations and employees thrive together.</p>
+                        </div>
+                    </div>
+
+                    <div class="whyus-item">
+                        <div class="whyus-icon">
+                            <i class="bi bi-gear-fill" aria-hidden="true"></i>
+                        </div>
+                        <div>
+                            <h4 class="whyus-item-title">Structured Solutions</h4>
+                            <p class="whyus-item-desc">We design systems that enhance workforce efficiency, improve performance, and support sustainable growth.</p>
+                        </div>
+                    </div>
+
+                    <div class="whyus-item">
+                        <div class="whyus-icon">
+                            <i class="bi bi-lightbulb-fill" aria-hidden="true"></i>
+                        </div>
+                        <div>
+                            <h4 class="whyus-item-title">Industry Insight</h4>
+                            <p class="whyus-item-desc">Deep understanding of diverse industries enables us to deliver practical, scalable solutions aligned with your market.</p>
+                        </div>
+                    </div>
+
+                    <div class="whyus-item">
+                        <div class="whyus-icon">
+                            <i class="bi bi-shield-check-fill" aria-hidden="true"></i>
+                        </div>
+                        <div>
+                            <h4 class="whyus-item-title">Excellence & Integrity</h4>
+                            <p class="whyus-item-desc">We operate with honesty, transparency, and discipline. Quality and accountability are non-negotiable.</p>
+                        </div>
+                    </div>
+
+                </div><!-- /differentiators -->
+
+                <p class="whyus-closing mt-5 mb-0">
+                    <strong>We're not just HR consultants — we're strategic partners committed to your success.</strong>
+                </p>
+
+            </div>
+
+            <!-- Image: Strategic Collaboration -->
+            <div class="col-lg-6 reveal reveal-delay-1">
+                <div class="whyus-image-frame">
+                    <!--
+                        WHY US IMAGE — Diverse team collaborating on strategic planning.
+                        Shows visible results and professional excellence.
+                    -->
+                    <img src="./src/assets/images/sections/whyus-collaboration.jpg"
+                         srcset="
+                             ./src/assets/images/sections/whyus-collaboration-mobile.jpg  480w,
+                             ./src/assets/images/sections/whyus-collaboration-tablet.jpg  960w,
+                             ./src/assets/images/sections/whyus-collaboration.jpg  1400w
+                         "
+                         sizes="(max-width: 767px) 100vw, 50vw"
+                         alt="Diverse professionals collaborating on strategic business planning with data and results"
+                         width="960"
+                         height="640"
+                         loading="lazy"
+                         decoding="async">
+                </div>
+            </div>
+
+        </div><!-- /row -->
+
+    </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════════════════
+     INLINE STYLES FOR WHY US SECTION
+     (Consider moving to main.css for production)
+════════════════════════════════════════════════════════════ -->
+<style>
+.whyus-section {
+    padding: var(--sec-pad);
+    background: var(--clr-bg);
+}
+
+.whyus-differentiators {
+    display: grid;
+    gap: 2rem;
+}
+
+.whyus-item {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1.5rem;
+    align-items: flex-start;
+    transition: transform var(--transition-base);
+}
+
+.whyus-item:hover {
+    transform: translateX(5px);
+}
+
+.whyus-icon {
+    width: 56px;
+    height: 56px;
+    background: var(--clr-accent-dim);
+    border-radius: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--clr-accent);
+    font-size: 1.75rem;
+    flex-shrink: 0;
+    transition: background var(--transition-base),
+                color var(--transition-base);
+}
+
+.whyus-item:hover .whyus-icon {
+    background: var(--clr-accent);
+    color: #ffffff;
+}
+
+.whyus-item-title {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--clr-text);
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.01em;
+}
+
+.whyus-item-desc {
+    font-size: 0.95rem;
+    color: var(--clr-text-90);
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+.whyus-closing {
+    font-size: 1.05rem;
+    color: var(--clr-text-90);
+    line-height: 1.8;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(196, 18, 48, 0.2);
+}
+
+.whyus-closing strong {
+    color: var(--clr-text);
+}
+
+.whyus-image-frame {
+    width: 100%;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: var(--shadow-card);
+    transition: box-shadow var(--transition-base);
+}
+
+.whyus-image-frame img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.whyus-image-frame:hover {
+    box-shadow: var(--shadow-card-hover);
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+    .whyus-section {
+        padding: 3rem 0;
+    }
+    
+    .whyus-image-frame {
+        margin-top: 2rem;
+    }
+    
+    .whyus-item {
+        gap: 1.25rem;
+    }
+    
+    .whyus-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.5rem;
+    }
+}
+</style>

@@ -13,13 +13,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="EMY TALENT — HR consulting firm offering recruitment, talent management and people-focused business solutions across Africa.">
+    <meta name="description" content="EMYTALENT SOLUTION LIMITED — HR Advisory, Payroll Management, Recruitment, and Transformational Training Solutions. Building stronger teams, developing effective leaders, driving sustainable business growth.">
     <!-- theme-color updates via JS to match current mode -->
     <meta name="theme-color" id="meta-theme-color" content="#0f0f0f">
-    <title>EMY TALENT — Connecting the Right Talent</title>
+    <title>EMYTALENT SOLUTION LIMITED — Empowering People. Transforming Businesses.</title>
 
-    <!-- Favicon -->
-    <link rel="icon" href="./src/assets/icon/favicon.ico" type="image/x-icon">
+    <!--
+        FAVICON SUITE
+        Browsers pick the best size automatically:
+          - favicon.ico       → legacy browsers (IE, old bookmarks)
+          - favicon-16x16.png → browser tab (standard)
+          - favicon-32x32.png → browser tab (retina / high-DPI)
+          - apple-touch-icon  → iOS home screen shortcut
+          - icon-192x192.png  → Android home screen / PWA
+          - icon-512x512.png  → PWA splash screen
+    -->
+    <link rel="icon"             href="./src/assets/icon/favicon.ico"         sizes="any">
+    <link rel="icon"             href="./src/assets/icon/favicon-16x16.png"   type="image/png" sizes="16x16">
+    <link rel="icon"             href="./src/assets/icon/favicon-32x32.png"   type="image/png" sizes="32x32">
+    <link rel="apple-touch-icon" href="./src/assets/icon/apple-touch-icon.png">
+
+    <!--
+        Open Graph / Social sharing
+        These control the image + text shown when the site is
+        shared on WhatsApp, LinkedIn, Twitter, Facebook etc.
+        Replace og:image with a real hosted URL before launch.
+    -->
+    <meta property="og:type"        content="website">
+    <meta property="og:title"       content="EMYTALENT SOLUTION LIMITED — Empowering People. Transforming Businesses.">
+    <meta property="og:description" content="HR Advisory & Business Partnering, Payroll Management, Recruitment, and Transformational Training Solutions. Building stronger teams and driving measurable results.">
+    <meta property="og:image"       content="https://yourdomain.com/src/assets/icon/icon-512x512.png">
+    <meta property="og:url"         content="https://yourdomain.com">
+    <meta name="twitter:card"       content="summary_large_image">
 
     <!--
         Inline theme-init: read saved preference BEFORE first paint
@@ -42,6 +67,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700;800&display=swap">
 
+    <!--
+        Preload the hero image — it's the Largest Contentful Paint (LCP) element.
+        Browser starts fetching it immediately, before CSS even parses.
+        Using optimized local images for faster load times.
+    -->
+    <link rel="preload"
+          as="image"
+          href="./src/assets/images/hero/hero-meeting.jpg"
+          imagesrcset="
+              ./src/assets/images/hero/hero-meeting-mobile.jpg  480w,
+              ./src/assets/images/hero/hero-meeting-tablet.jpg  800w,
+              ./src/assets/images/hero/hero-meeting.jpg 1200w
+          "
+          imagesizes="(max-width: 991px) 100vw, 50vw">
+
     <!-- Bootstrap Icons CDN -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
@@ -54,8 +94,8 @@
 <body>
 
     <!-- ══════════════════════════════════════════════════════════
-        PAGE SPINNER
-        Shown while components are fetched. Hidden by main.js.
+         PAGE SPINNER
+         Shown while components are fetched. Hidden by main.js.
     ══════════════════════════════════════════════════════════ -->
     <div id="spinner" class="page-spinner show" aria-hidden="true">
         <div class="page-spinner__loader" role="status">
@@ -64,12 +104,12 @@
     </div>
 
     <!-- ══════════════════════════════════════════════════════════
-        NAVBAR — injected from src/components/navbar.html
+         NAVBAR — injected from src/components/navbar.html
     ══════════════════════════════════════════════════════════ -->
     <header id="navbar"></header>
 
     <!-- ══════════════════════════════════════════════════════════
-        MAIN CONTENT
+         MAIN CONTENT
     ══════════════════════════════════════════════════════════ -->
     <main>
 
@@ -77,34 +117,33 @@
         <section id="intro" aria-label="Hero">
             <div class="container">
                 <div class="row align-items-center g-5"
-                    style="min-height: calc(100vh - var(--navbar-h))">
+                     style="min-height: calc(100vh - var(--navbar-h))">
 
                     <!-- Left: headline + CTA -->
                     <div class="col-lg-6 hero-content">
                         <div class="hero-asterisk fade-in-up" aria-hidden="true">✳</div>
 
                         <h1 class="hero-title fade-in-up">
-                            Connecting
-                            <span class="text-accent">the Right Talent</span><br>
-                            to the Right Opportunity
+                            Empowering People.<br>
+                            <span class="text-accent">Transforming Businesses.</span><br>
+                            Driving Results.
                         </h1>
 
                         <p class="hero-subtitle fade-in-up">
-                            EMY TALENT is your trusted HR consulting partner — helping businesses
-                            recruit smarter, retain better, and build winning teams across Africa
-                            and beyond.
+                            We partner with organizations to build stronger teams, develop effective leaders,
+                            and deliver measurable results through strategic HR solutions.
                         </p>
 
                         <div class="hero-actions fade-in-up">
                             <a href="#services" class="btn-brand">
-                                Get Started
+                                Explore Our Services
                                 <i class="bi bi-arrow-right ms-1" aria-hidden="true"></i>
                             </a>
-                            <a href="tel:+2340000000000" class="hero-phone">
+                            <a href="tel:+2348106748321" class="hero-phone">
                                 <span class="hero-phone-icon" aria-hidden="true">
                                     <i class="bi bi-telephone-fill"></i>
                                 </span>
-                                CALL : +234 000 0000 000
+                                +234 810 674 8321
                             </a>
                         </div>
                     </div>
@@ -120,16 +159,24 @@
 
                             <div class="hero-image-card">
                                 <!--
-                                    TODO: replace Unsplash URL with your own photo.
-                                    Save it to: src/assets/images/hero/hero-main.jpg
-                                    Then update src to: ./src/assets/images/hero/hero-main.jpg
+                                    HERO IMAGE — above the fold, loads eagerly (no lazy).
+                                    Uses optimized local images for maximum performance.
+                                    Responsive srcset for desktop, tablet, and mobile.
                                 -->
                                 <img
-                                    src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&q=80"
-                                    alt="EMY TALENT team collaborating"
-                                    width="800"
-                                    height="587"
+                                    src="./src/assets/images/hero/hero-meeting.jpg"
+                                    srcset="
+                                        ./src/assets/images/hero/hero-meeting-mobile.jpg  480w,
+                                        ./src/assets/images/hero/hero-meeting-tablet.jpg  800w,
+                                        ./src/assets/images/hero/hero-meeting.jpg 1200w
+                                    "
+                                    sizes="(max-width: 991px) 100vw, 50vw"
+                                    alt="Diverse African business professionals discussing HR strategy in modern office meeting room"
+                                    width="1200"
+                                    height="800"
                                     loading="eager"
+                                    fetchpriority="high"
+                                    decoding="async"
                                 >
                             </div>
                         </div>
@@ -145,7 +192,9 @@
             The id matches the key used in the loadComponent() call.
         -->
         <div id="about-mount"></div>
+        <div id="whyus-mount"></div>
         <div id="services-mount"></div>
+        <div id="training-mount"></div>
         <div id="testimonials-mount"></div>
         <div id="contact-mount"></div>
 

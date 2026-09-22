@@ -275,7 +275,9 @@ async function boot() {
     /* ── Load all components in document order ── */
     await loadComponent('navbar',             './src/components/navbar.html');
     await loadComponent('about-mount',        './src/components/about.html');
+    await loadComponent('whyus-mount',        './src/components/whyus.html');
     await loadComponent('services-mount',     './src/components/services.html');
+    await loadComponent('training-mount',     './src/components/training.html');
     await loadComponent('testimonials-mount', './src/components/testimonials.html');
     await loadComponent('contact-mount',      './src/components/contact.html');
     await loadComponent('footer-mount',       './src/components/footer.html');
