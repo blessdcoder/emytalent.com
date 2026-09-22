@@ -1,0 +1,15 @@
+# GitHub Pages Configuration
+title: EMYTALENT SOLUTION LIMITED
+description: Premium HR Consulting, Talent Management & Leadership Development
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Exclude files
+exclude:
+  - .gitignore
+  - README.md
+  - LICENSE
